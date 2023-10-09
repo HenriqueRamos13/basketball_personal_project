@@ -1,5 +1,5 @@
 import Court from "./components/Court";
-import Menus from "./components/Menus";
+// import Menus from "./components/Menus";
 import Player from "./components/Player";
 import Scoreboard from "./components/Scoreboard";
 
