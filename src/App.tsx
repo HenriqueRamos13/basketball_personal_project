@@ -5,12 +5,12 @@ import Scoreboard from "./components/Scoreboard";
 
 const TEAMS = [
   {
-    name: "Team 1",
+    name: "Team Blue",
     score: 0,
     color: "red",
   },
   {
-    name: "Team 2",
+    name: "Team Red",
     score: 0,
     color: "blue",
   },
