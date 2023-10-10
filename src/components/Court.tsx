@@ -4,6 +4,7 @@ import IMAGE from "../assets/court.jpeg";
 interface ICourt {}
 
 const Court: React.FC<ICourt> = () => {
+  // TODO reformular isto
   const [area1, setArea1] = React.useState(false);
   const [area2, setArea2] = React.useState(false);
   const [area3, setArea3] = React.useState(false);
