@@ -26,7 +26,7 @@ function App() {
   const [playersList2, setPlayersList2] = useState(false);
 
   return (
-    <>
+    <main>
       <Scoreboard teams={TEAMS} turn={2} />
       <div className="w-full flex justify-between py-2 lg:hidden">
         <button
@@ -55,7 +55,9 @@ function App() {
         <div
           className={classNames(
             "bg-white border-1 shadow-md min-w-[230px] w-[20%] h-[100%] overflow-y-scroll z-50 no-scrollbar lg:pt-[0px] flex flex-col gap-2 items-center justify-around p-2 absolute transition-all",
-            playersList1 ? "left-0 lg:left-0" : "left-[-230px] lg:left-0"
+            playersList1
+              ? "left-0 lg:left-0"
+              : "left-[-230px] lg:left-0 hidden lg:flex"
           )}
         >
           <Player name="Player" number={1} />
@@ -68,7 +70,7 @@ function App() {
           <Player name="Player" number={8} />
         </div>
         <div className="hidden lg:block lg:w-[20%]"></div>
-        <div className="w-[100%] lg:w-[60%] h-[100%] lg:py-0">
+        <div className="w-[100%] lg:w-[60%] h-[100%] lg:py-0 px-4">
           <Court />
 
           <span className="isolate inline-flex rounded-md shadow-sm w-full">
@@ -102,7 +104,9 @@ function App() {
         <div
           className={classNames(
             "bg-white border-1 shadow-md min-w-[230px] w-[20%] h-[100%] overflow-y-scroll z-50 no-scrollbar lg:pt-[0px] flex flex-col gap-2 items-center justify-around p-2 absolute transition-all",
-            playersList2 ? "right-0 lg:right-0" : "right-[-230px] lg:right-0"
+            playersList2
+              ? "right-0 lg:right-0"
+              : "right-[-230px] lg:right-0 hidden lg:flex"
           )}
         >
           <Player name="Player" number={1} />
@@ -117,7 +121,7 @@ function App() {
         <div className="hidden lg:block lg:w-[20%]"></div>
       </div>
       {/* <Menus /> */}
-    </>
+    </main>
   );
 }
 
